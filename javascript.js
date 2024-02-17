@@ -12,67 +12,59 @@
 // create an array of objects, each object is a card
 // creating them programmatically, was presenting several bugs
 const fullDeck = [
-  { suit: "Hearts", value: 2, name: "2 of Hearts" },
-  { suit: "Hearts", value: 3, name: "3 of Hearts" },
-  { suit: "Hearts", value: 4, name: "4 of Hearts" },
-  { suit: "Hearts", value: 5, name: "5 of Hearts" },
-  { suit: "Hearts", value: 6, name: "6 of Hearts" },
-  { suit: "Hearts", value: 7, name: "7 of Hearts" },
-  { suit: "Hearts", value: 8, name: "8 of Hearts" },
-  { suit: "Hearts", value: 9, name: "9 of Hearts" },
-  { suit: "Hearts", value: 10, name: "10 of Hearts" },
-  { suit: "Hearts", value: 11, name: "Jack of Hearts" },
-  { suit: "Hearts", value: 12, name: "Queen of Hearts" },
-  { suit: "Hearts", value: 13, name: "King of Hearts" },
-  { suit: "Hearts", value: 14, name: "Ace of Hearts" },
-  { suit: "Diamonds", value: 2, name: "2 of Diamonds" },
-  { suit: "Diamonds", value: 3, name: "3 of Diamonds" },
-  { suit: "Diamonds", value: 4, name: "4 of Diamonds" },
-  { suit: "Diamonds", value: 5, name: "5 of Diamonds" },
-  { suit: "Diamonds", value: 6, name: "6 of Diamonds" },
-  { suit: "Diamonds", value: 7, name: "7 of Diamonds" },
-  { suit: "Diamonds", value: 8, name: "8 of Diamonds" },
-  { suit: "Diamonds", value: 9, name: "9 of Diamonds" },
-  { suit: "Diamonds", value: 10, name: "10 of Diamonds" },
-  { suit: "Diamonds", value: 11, name: "Jack of Diamonds" },
-  { suit: "Diamonds", value: 12, name: "Queen of Diamonds" },
-  { suit: "Diamonds", value: 13, name: "King of Diamonds" },
-  { suit: "Diamonds", value: 14, name: "Ace of Diamonds" },
-  { suit: "Clubs", value: 2, name: "2 of Clubs" },
-  { suit: "Clubs", value: 3, name: "3 of Clubs" },
-  { suit: "Clubs", value: 4, name: "4 of Clubs" },
-  { suit: "Clubs", value: 5, name: "5 of Clubs" },
-  { suit: "Clubs", value: 6, name: "6 of Clubs" },
-  { suit: "Clubs", value: 7, name: "7 of Clubs" },
-  { suit: "Clubs", value: 8, name: "8 of Clubs" },
-  { suit: "Clubs", value: 9, name: "9 of Clubs" },
-  { suit: "Clubs", value: 10, name: "10 of Clubs" },
-  { suit: "Clubs", value: 11, name: "Jack of Clubs" },
-  { suit: "Clubs", value: 12, name: "Queen of Clubs" },
-  { suit: "Clubs", value: 13, name: "King of Clubs" },
-  { suit: "Clubs", value: 14, name: "Ace of Clubs" },
-  { suit: "Spades", value: 2, name: "2 of Spades" },
-  { suit: "Spades", value: 3, name: "3 of Spades" },
-  { suit: "Spades", value: 4, name: "4 of Spades" },
-  { suit: "Spades", value: 5, name: "5 of Spades" },
-  { suit: "Spades", value: 6, name: "6 of Spades" },
-  { suit: "Spades", value: 7, name: "7 of Spades" },
-  { suit: "Spades", value: 8, name: "8 of Spades" },
-  { suit: "Spades", value: 9, name: "9 of Spades" },
-  { suit: "Spades", value: 10, name: "10 of Spades" },
-  { suit: "Spades", value: 11, name: "Jack of Spades" },
-  { suit: "Spades", value: 12, name: "Queen of Spades" },
-  { suit: "Spades", value: 13, name: "King of Spades" },
-  { suit: "Spades", value: 14, name: "Ace of Spades" },
+  { value: 2, name: "2 of Hearts" },
+  { value: 3, name: "3 of Hearts" },
+  { value: 4, name: "4 of Hearts" },
+  { value: 5, name: "5 of Hearts" },
+  { value: 6, name: "6 of Hearts" },
+  { value: 7, name: "7 of Hearts" },
+  { value: 8, name: "8 of Hearts" },
+  { value: 9, name: "9 of Hearts" },
+  { value: 10, name: "10 of Hearts" },
+  { value: 11, name: "Jack of Hearts" },
+  { value: 12, name: "Queen of Hearts" },
+  { value: 13, name: "King of Hearts" },
+  { value: 14, name: "Ace of Hearts" },
+  { value: 2, name: "2 of Diamonds" },
+  { value: 3, name: "3 of Diamonds" },
+  { value: 4, name: "4 of Diamonds" },
+  { value: 5, name: "5 of Diamonds" },
+  { value: 6, name: "6 of Diamonds" },
+  { value: 7, name: "7 of Diamonds" },
+  { value: 8, name: "8 of Diamonds" },
+  { value: 9, name: "9 of Diamonds" },
+  { value: 10, name: "10 of Diamonds" },
+  { value: 11, name: "Jack of Diamonds" },
+  { value: 12, name: "Queen of Diamonds" },
+  { value: 13, name: "King of Diamonds" },
+  { value: 14, name: "Ace of Diamonds" },
+  { value: 2, name: "2 of Clubs" },
+  { value: 3, name: "3 of Clubs" },
+  { value: 4, name: "4 of Clubs" },
+  { value: 5, name: "5 of Clubs" },
+  { value: 6, name: "6 of Clubs" },
+  { value: 7, name: "7 of Clubs" },
+  { value: 8, name: "8 of Clubs" },
+  { value: 9, name: "9 of Clubs" },
+  { value: 10, name: "10 of Clubs" },
+  { value: 11, name: "Jack of Clubs" },
+  { value: 12, name: "Queen of Clubs" },
+  { value: 13, name: "King of Clubs" },
+  { value: 14, name: "Ace of Clubs" },
+  { value: 2, name: "2 of Spades" },
+  { value: 3, name: "3 of Spades" },
+  { value: 4, name: "4 of Spades" },
+  { value: 5, name: "5 of Spades" },
+  { value: 6, name: "6 of Spades" },
+  { value: 7, name: "7 of Spades" },
+  { value: 8, name: "8 of Spades" },
+  { value: 9, name: "9 of Spades" },
+  { value: 10, name: "10 of Spades" },
+  { value: 11, name: "Jack of Spades" },
+  { value: 12, name: "Queen of Spades" },
+  { value: 13, name: "King of Spades" },
+  { value: 14, name: "Ace of Spades" },
 ];
-
-class Card {
-  constructor(suit, value) {
-    this.suit = suit;
-    this.value = value;
-    this.name = `${value} of ${suit}`;
-  }
-}
 
 class Deck {
   constructor() {
@@ -119,6 +111,7 @@ class Player {
     this.hand.unshift(card);
   }
 
+  // shuffle the hand
   shuffleCards() {
     for (let i = this.hand.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -165,19 +158,23 @@ class Game {
       console.log(`Player 1: ${card1.name} vs Player 2: ${card2.name}`);
       this.warCards.push(card1, card2);
       if (card1.value > card2.value) {
-        console.log(
-          "Player 1 wins the round. Score: ",
-          this.player1.hand.length
-        );
         this.player1.hand.unshift(...this.warCards);
         this.warCards = [];
-      } else if (card1.value < card2.value) {
         console.log(
-          "Player 2 wins the round. Score: ",
+          "Player 1 wins the round. Score: P1:",
+          this.player1.hand.length,
+          "P2:",
           this.player2.hand.length
         );
+      } else if (card1.value < card2.value) {
         this.player2.hand.unshift(...this.warCards);
         this.warCards = [];
+        console.log(
+          "Player 2 wins the round. Score: P1:",
+          this.player1.hand.length,
+          "P2:",
+          this.player2.hand.length
+        );
       } else {
         // players tie, remove cards from play
         console.log("Tie!");
